@@ -1,0 +1,91 @@
+@import "src/components/base.scss";
+
+.table {
+  color: #fff;
+  flex-grow: 0;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &__h3 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    img {
+      width: 4px;
+      height: 15px;
+    }
+  }
+  &__wrapper {
+    background-color: #151c20;
+    overflow-x: auto; /* add this */
+    &__body {
+      padding: 15px;
+      border: 1px solid $border-color;
+      flex-grow: 0;
+      border-radius: 15px;
+      &__table {
+        max-width: 100% !important;
+        width: 100%;
+
+        tr:first-child th:first-child {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+        tr:first-child th:last-child {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+
+        &__header {
+          background-color: $secondary-color !important;
+          padding: 0 !important;
+          border: none !important;
+
+          th {
+            padding: 10px !important;
+          }
+        }
+        &__body {
+          vertical-align: inherit !important;
+          border-bottom: 1px solid $border-color;
+          td {
+            padding: 15px 10px;
+          }
+        }
+      }
+      &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px !important;
+        padding-bottom: 10px;
+        align-items: center;
+        font-size: 14px;
+        color: #667085;
+
+        &__middle {
+          span {
+            padding: 10px;
+            cursor: pointer;
+          }
+          &__span--active {
+            background-color: #487fe8;
+
+            border-radius: 40px;
+            color: #fff;
+            padding: 7px 13px !important;
+          }
+        }
+
+        &__right {
+          cursor: pointer;
+          color: #4273cf;
+        }
+
+        &__left {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

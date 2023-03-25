@@ -1,0 +1,54 @@
+@import "src/components/base.scss";
+.tweets {
+  width: 1460px;
+  margin: 40px auto;
+  &__body {
+    margin-top: 50px;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+
+      &__h3 {
+        font-size: 24px;
+        font-weight: 500;
+      }
+      img {
+        width: 4px;
+        height: 15px;
+      }
+    }
+    &__tablewrapper {
+      display: flex;
+      margin-bottom: 70px;
+      &__minitable {
+        border: 1px solid $border-color;
+        padding: 15px;
+        height: 120px;
+        border-radius: 15px;
+        margin-right: 20px;
+
+        &__h3 {
+          background-color: $secondary-color;
+          padding: 10px 15px;
+          padding-right: 50px;
+          border-radius: 15px;
+          h3 {
+            font-size: 14px;
+            margin: 0;
+          }
+        }
+
+        &__count {
+          padding: 15px;
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
+
+      &__table {
+        width: 60%;
+      }
+    }
+  }
+}
